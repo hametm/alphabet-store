@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Nav from "./Nav";
+import CartProduct from "./CartProduct";
 
 function Cart(props) {
 
@@ -27,20 +28,12 @@ function Cart(props) {
 
     const displayCart = props.list.map(product => {
         return (
-            <div className="cartItem" id={product.name}>
-                <div id="cartItemInfo">
-                    <div id="cartImgContainer"><img src={product.src} alt={product.name} /></div>
-                    <div id="infoText">
-                        <p><strong>{product.name}</strong></p>
-                        <p>${(product.price).toFixed(2)} each</p>
-                    </div>
-                </div>
-                <div id="quantity">
-                    <button className="quantityBtn" onClick={() => props.increaseQuantity(product)}>+</button>
-                    <p>{product.amount}</p>
-                    <button className="quantityBtn" onClick={() => props.decreaseQuantity(product)}>-</button>
-                </div>
-            </div>
+            <CartProduct
+                name={product.name}
+                key={product.id}
+                price={product.price}
+                product={product}
+            />
         );
     });
     

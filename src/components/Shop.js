@@ -1,6 +1,6 @@
 import React from "react";
 import Nav from "./Nav";
-import Product from "./Product";
+import ShopProduct from "./ShopProduct";
 import a from "../styles/images/a.png";
 import b from "../styles/images/b.png";
 import c from "../styles/images/c.png";
@@ -67,13 +67,13 @@ function Shop(props) {
     const showProducts = productList.map(product => {
         return (
             <div className="product-container">
-                <Product name={product.name}
+                <ShopProduct 
+                            name={product.name}
                             key={product.id}
-                            addToCart={props.addToCart}
-                            src={product.image}
                             price={product.price}
+                            addToCart={props.addToCart}
+                            product={product}
                 />
-                <button className="addBtn" onClick={() => props.addToCart(product)}>Add to cart</button>
             </div>
         );            
     });
