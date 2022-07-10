@@ -60,7 +60,7 @@ function IcelandicShop(props) {
             <Nav amount={props.amount}/>
             <main className="shop-container">
                 <header>
-                    <h1 class="header">All Icelandic Letters</h1>
+                    <h1 className="header">All Icelandic Letters</h1>
                 </header>
                 <div className="products">{showProducts}</div>
             </main>

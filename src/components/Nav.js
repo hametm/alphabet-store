@@ -27,7 +27,7 @@ const Nav = (props) => {
                 </div>
                 <div className="nav-right">
                     <Link style={{textDecoration: "none"}} to="/account">
-                        <li className="link">Your Account</li>
+                        <li className="link">Account</li>
                     </Link>
                     <Link style={{textDecoration: "none"}} to="/cart">
                         <li className="cart-icon">

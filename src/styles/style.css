@@ -265,7 +265,7 @@ header {
 .shop-product-image {
     width: 100%;
     height: 100%;
-    font-size: 14rem;
+    font-size: 13rem;
     background-color: white;
     font-family: 'Times New Roman', Times, serif;
     display: grid;
@@ -427,18 +427,143 @@ hr {
     padding-bottom: 5rem;
 }
 
-.account-button {
-    border: none;
-    border-radius: 5px;
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 400px;
+    max-width: 500px;
+    margin-top: 2rem;
+}
+
+.form-section {
+    display: flex;
+    gap: .5rem;
+}
+
+label {
+    width: 150px;
+}
+
+input {
+    border-radius: 7px;
+    border: 1px solid rgb(225, 225, 225);
+    padding: .2rem .4rem;
     font-family: 'Inter', sans-serif;
-    padding: 8px 12px;
-    font-size: 1rem;
+    color: grey;
+    width: 100%;
+}
+
+.submit {
+    border-radius: 5px;
     background-color: var(--blue);
     color: white;
     margin-top: 1rem;
+    padding: 8px 12px;
+    border: none;
+    width: 100px;
+    font-size: .9rem;
 }
 
-.account-button:hover {
+.submit:hover {
     cursor: pointer;
     background-color: var(--button-hover);
+}
+
+.invalid {
+    border: 1px solid red;
+}
+
+@media (max-width: 480px) {
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+
+    nav h4 {
+        font-size: 2rem;
+    }
+
+    .nav-left {
+        margin: 0 .5rem 0 0;
+        padding: 0;
+        gap: .5rem;
+    }
+
+    .nav-right {
+        gap: .5rem;
+    }
+
+    nav li {
+        font-size: 1rem;
+    }
+
+    .home-container {
+        background: url(./images/hero-small.png);
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+        margin-bottom: 3rem;
+    }
+
+    .home-text {
+        margin: 0 0 4rem 2rem;
+        animation: none;
+    }
+
+    .home-text h1 {
+        font-size: 3rem;
+    }
+
+    .cart-icon {
+        margin: 0;
+    }
+
+    .header {
+        font-size: 2rem;
+    }
+
+    .shop-product-image {
+        font-size: 10rem;
+    }
+
+    .products {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 1.5rem;
+        justify-content: center;
+    }
+
+    .cart {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cart-image {
+        max-width: 30px;
+    }
+
+    .cart-product-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .quantity {
+        display: flex;
+        justify-content: center;
+        margin: 1rem auto 0 0;
+    }
+
+    #empty-cart {
+        font-size: 1.25rem;
+    }
+
+    form {
+        min-width: 200px;
+        max-width: 350px;
+    }
+
 }
