@@ -55,7 +55,7 @@ function LatinShop(props) {
             <Nav amount={props.amount}/>
             <main className="shop-container">
                 <header>
-                    <h1>Latin Letters</h1>
+                    <h1 class="header">All Latin Letters</h1>
                 </header>
                 <div className="products">{showProducts}</div>
             </main>

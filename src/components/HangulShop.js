@@ -67,7 +67,7 @@ function HangulShop(props) {
             <Nav amount={props.amount}/>
             <main className="shop-container">
                 <header>
-                    <h1>Hangul Letters</h1>
+                    <h1 class="header">All Hangul Letters</h1>
                 </header>
                 <div className="products">{showProducts}</div>
             </main>

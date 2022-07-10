@@ -32,13 +32,13 @@ function IcelandicShop(props) {
         {name: "T", id: uuid(), price: 2},
         {name: "U", id: uuid(), price: 5},
         {name: "Ú", id: uuid(), price: 3},
-        {name: "V", id: uuid(), price: 50},
-        {name: "X", id: uuid(), price: 50},
-        {name: "Y", id: uuid(), price: 50},
-        {name: "Ý", id: uuid(), price: 50},
-        {name: "Þ", id: uuid(), price: 50},
-        {name: "Æ", id: uuid(), price: 50},
-        {name: "Ö", id: uuid(), price: 50},
+        {name: "V", id: uuid(), price: 4.50},
+        {name: "X", id: uuid(), price: 5},
+        {name: "Y", id: uuid(), price: 1.50},
+        {name: "Ý", id: uuid(), price: 2},
+        {name: "Þ", id: uuid(), price: 3},
+        {name: "Æ", id: uuid(), price: 1.50},
+        {name: "Ö", id: uuid(), price: 2},
       ];
 
     const showProducts = productList.map(product => {
@@ -60,7 +60,7 @@ function IcelandicShop(props) {
             <Nav amount={props.amount}/>
             <main className="shop-container">
                 <header>
-                    <h1>Icelandic Letters</h1>
+                    <h1 class="header">All Icelandic Letters</h1>
                 </header>
                 <div className="products">{showProducts}</div>
             </main>

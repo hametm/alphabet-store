@@ -5,6 +5,7 @@ import LatinShop from "./components/LatinShop";
 import HangulShop from "./components/HangulShop";
 import IcelandicShop from "./components/IcelandicShop";
 import Cart from "./components/Cart";
+import Account from "./components/Account";
 import { v4 as uuid } from 'uuid';
 
 
@@ -27,7 +28,6 @@ function App() {
           key: uuid(), 
           amount: 1, 
           price: product.price,
-          src: product.image,
           };
       setCartList(cartList.concat(cartProduct));
       setTotalPrice(x => x + product.price)
@@ -66,6 +66,10 @@ function App() {
                 <Route 
                   path = "/hangul-shop" 
                   element={<HangulShop addToCart={addToCart} amount={cartAmount} />} 
+                />
+                 <Route 
+                  path = "/account" 
+                  element={<Account addToCart={addToCart} amount={cartAmount} />} 
                 />
                 <Route 
                   path = "/cart" 
