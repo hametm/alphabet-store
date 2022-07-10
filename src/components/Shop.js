@@ -81,7 +81,7 @@ function Shop(props) {
     return (
         <div className="container">
             <Nav amount={props.amount}/>
-            <main id="shop-container">
+            <main className="shop-container">
                 <header>
                     <h1>All Letters</h1>
                 </header>

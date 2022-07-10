@@ -1,18 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Libre+Franklin:wght@700&family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=DM+Serif+Display&family=Inter:wght@300;400;700&display=swap');
 
 :root {
-    --blue: #5DC1C8;
-    --dark-blue: #106470;
-    --green: #5AB648;
-    --pink: #FF8985;
-    --yellow: #FFB800;
-    --red: #FF7033;
+    --blue: #46a7a7;
+    --brown: #b49d9d;
+    --pink: #e8dada;
+    --background: #fbf7f5;
 }
 
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    background-color: #fbf7f5;
+    background-color: var(--background);
     color: grey;
 }
 
@@ -34,7 +32,7 @@ main {
 nav {
     position: fixed;
     width: 100%;
-    background-color: var(--blue);
+    background-color: var(--brown);
     padding-top: .5rem;
     padding-bottom: .5rem;
     height: 2.5rem;
@@ -42,10 +40,7 @@ nav {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    box-shadow:
-        0 0 0 4px var(--green),
-        0 0 0 8px var(--yellow),
-        0 0 0 12px var(--pink);
+    box-shadow: 0 0 5px grey;
 }
 
 nav ul {
@@ -86,7 +81,7 @@ nav ul {
 nav h4 {
     color: white;
     font-size: 1.75rem;
-    font-family: 'Patua One', cursive;
+    font-family: 'Caveat', cursive;
 }
 
 nav img {
@@ -95,9 +90,9 @@ nav img {
 
 /* Home */
 
-#homeContainer {
-    background-image: url(./images/fruit-background.jpg);
-    background-size: cover;
+.home-container {
+    /* background-image: url(./images/fruit-background.jpg);
+    background-size: cover; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -114,7 +109,7 @@ nav img {
     }
 }
 
-#homeText {
+.home-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -122,14 +117,15 @@ nav img {
     margin-bottom: 5rem;
 }
 
-#homeContainer h1 {
+.home-container h1 {
     margin: 0 5rem 0 0;
-    color: white;
+    color: var(--dark-blue);
+    font-family: 'Patua One', cursive;
     font-size: 4rem;
     animation: linear 1s fadein;
 }
 
-#homeContainer h2 {
+.home-container h2 {
     margin-left: 15rem;
     color: white;
     font-size: 3rem;
@@ -138,22 +134,34 @@ nav img {
     animation: linear 2s fadein;
 }
 
-#homeContainer h2:hover {
+.home-container h2:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
 
+.home-button {
+    border: none;
+    border-radius: 8px;
+    background-color: var(--yellow);
+    font-size: 1.5rem;
+    padding: 10px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 1px;
+}
+
 /* Shop */
 
-#shop-container {
+.shop-container {
     display: grid;
     grid-template-rows: auto;
     place-items: center;
-    padding: 5rem 12rem;
+    padding: 5rem 14rem;
 }
 
-#shop-container h1 {
+.shop-container h1 {
     font-size: 3.5rem;
+    font-family: 'DM Serif Display', serif;
 }
 
 header {
@@ -167,27 +175,23 @@ header {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 5rem;
+    gap: 2rem;
     justify-content: center;
-}
-
-h3 {
-    margin: 0;
 }
 
 .add-button {
     border: none;
     border-radius: 5px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-family: 'Inter', sans-serif;
     padding: 8px;
     font-size: 1rem;
-    background-color: var(--yellow);
+    background-color: var(--blue);
     color: white;
     width: 100%;
 }
 
 .add-button:hover {
-    background-color: #dfa000;
+    background-color: #3b9292;
     cursor: pointer;
 }
 
@@ -246,12 +250,12 @@ h3 {
 .cart-container {
     display: flex;
     flex-direction: column;
-    padding: 5rem 12rem;
+    padding: 5rem 14rem;
 }
 
 .cart-container h1 {
     font-size: 3.5rem;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'DM Serif Display', serif;
 
 }
 
@@ -291,25 +295,33 @@ h3 {
     font-size: 1.2rem;
 }
 
-
 hr {
     width: 100%;
+}
+
+.summary p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.summary h3 {
+    margin: 0;
 }
 
 .checkout-button {
     border: none;
     border-radius: 5px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+    font-family: 'Inter', sans-serif;
     padding: 8px;
     font-size: 1.1rem;
-    background-color: var(--yellow);
+    background-color: var(--blue);
     color: white;
     width: 100%;
 }
 
 .checkout-button:hover {
     cursor: pointer;
-    background-color: #dfa000;
+    background-color: #3b9292;
 }
 
 .checkout-button:active {
@@ -336,7 +348,6 @@ hr {
     background-color: #f9f1f1;
     box-shadow: -2px 2px 5px grey;
     padding: 1rem 2rem;
-    border-radius: 8px;
 }
 
 .cart-product-container figure {

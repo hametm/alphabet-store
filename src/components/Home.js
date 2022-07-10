@@ -7,11 +7,12 @@ function Home(props) {
   return (
     <div className="container">
       <Nav amount={props.amount}/>
-      <main id="homeContainer">
-        <div id="homeText">
-          <h1>fresh fruit, right when you need it.</h1>
+      <main className="home-container">
+        <div id="home-text">
+          <h1>Buy the alphabet!</h1>
           <Link style={{textDecoration: "none"}} to="/shop">
-            <h2>shop all fruit</h2>
+            <h2>New styles are IN</h2>
+            <button className="home-button">SHOP NOW</button>
           </Link>
         </div>
       </main>

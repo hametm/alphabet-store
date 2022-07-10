@@ -51,10 +51,10 @@ function Cart(props) {
                     <div className="summary">
                         <h2>Summary</h2>
                         <div className="total">
-                            <h3>Items</h3><h3>${(props.price).toFixed(2)}</h3>
+                            <p>Items</p><p>${(props.price).toFixed(2)}</p>
                         </div>
                         <div className="total discount-text">
-                            <h3>Super Discount</h3><h3>-${(superDiscount).toFixed(2)}</h3>
+                            <p>Super Discount</p><p>-${(superDiscount).toFixed(2)}</p>
                         </div>
                         <hr></hr>
                         <div className="total total-text">
