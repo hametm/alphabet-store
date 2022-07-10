@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/alphabet-store/static/css/main.77e9d74f.css",
+    "main.js": "/alphabet-store/static/js/main.5ee946e8.js",
+    "static/media/hero.png": "/alphabet-store/static/media/hero.37cf71a44def1684460e.png",
+    "static/media/hero-small.png": "/alphabet-store/static/media/hero-small.12f33b97d0d06869f69f.png",
+    "index.html": "/alphabet-store/index.html",
+    "main.77e9d74f.css.map": "/alphabet-store/static/css/main.77e9d74f.css.map",
+    "main.5ee946e8.js.map": "/alphabet-store/static/js/main.5ee946e8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.77e9d74f.css",
+    "static/js/main.5ee946e8.js"
+  ]
+}
