@@ -7,7 +7,7 @@ function ShopProduct(props) {
                     <p>${(props.price).toFixed(2)}</p>
                 </figcaption>
             </figure>
-            <button className="addBtn" onClick={() => props.addToCart(props.product)}>Add to cart</button>
+            <button className="add-button" onClick={() => props.addToCart(props.product)}>Add to cart</button>
         </div>
     );
 }
