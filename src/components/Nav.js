@@ -19,6 +19,9 @@ const Nav = (props) => {
                 <Link style={{textDecoration: "none"}} to="/latin-shop">
                     <li className="links">Latin Shop</li>
                 </Link>
+                <Link style={{textDecoration: "none"}} to="/icelandic-shop">
+                    <li className="links">Icelandic Shop</li>
+                </Link>
                 <Link style={{textDecoration: "none"}} to="/hangul-shop">
                     <li className="links"><span className="hangul-link"><strong>New: </strong></span>Hangul Shop</li>
                 </Link>

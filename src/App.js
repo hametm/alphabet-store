@@ -3,6 +3,7 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import LatinShop from "./components/LatinShop";
 import HangulShop from "./components/HangulShop";
+import IcelandicShop from "./components/IcelandicShop";
 import Cart from "./components/Cart";
 import { v4 as uuid } from 'uuid';
 
@@ -57,6 +58,10 @@ function App() {
                 <Route 
                   path = "/latin-shop" 
                   element={<LatinShop addToCart={addToCart} amount={cartAmount} />} 
+                />
+                <Route 
+                  path = "/icelandic-shop" 
+                  element={<IcelandicShop addToCart={addToCart} amount={cartAmount} />} 
                 />
                 <Route 
                   path = "/hangul-shop" 
