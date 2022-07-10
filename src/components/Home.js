@@ -8,13 +8,13 @@ function Home(props) {
     <div className="container">
       <Nav amount={props.amount}/>
       <main className="home-container">
-        <div id="home-text">
-          <h1>Buy the alphabet!</h1>
-          <Link style={{textDecoration: "none"}} to="/shop">
-            <h2>New styles are IN</h2>
-            <button className="home-button">SHOP NOW</button>
-          </Link>
-        </div>
+          <div className="home-text">
+            <h1>The Hangul Collection</h1>
+            <p>Check out the smart styles of the Korean language.</p>
+            <Link className="home-link" style={{textDecoration: "none"}} to="/hangul-shop">
+              <button className="home-button">SHOP NOW</button>
+            </Link>
+          </div>
       </main>
     </div>
   );

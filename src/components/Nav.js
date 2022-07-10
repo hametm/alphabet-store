@@ -8,7 +8,7 @@ const Nav = (props) => {
         <nav>
             <Link style={{textDecoration: "none"}} to="/">
                 <div id="logo">
-                    <div><img src={logo} alt="logo" /></div>
+                    <img className="logo" src={logo} alt="logo" />
                     <h4>The Alphabet Store</h4>
                 </div>
             </Link>
@@ -16,8 +16,11 @@ const Nav = (props) => {
                 <Link style={{textDecoration: "none"}} to="/">
                     <li className="links">Home</li>
                 </Link>
-                <Link style={{textDecoration: "none"}} to="/shop">
-                    <li className="links">Shop</li>
+                <Link style={{textDecoration: "none"}} to="/latin-shop">
+                    <li className="links">Latin Shop</li>
+                </Link>
+                <Link style={{textDecoration: "none"}} to="/hangul-shop">
+                    <li className="links"><span className="hangul-link"><strong>New: </strong></span>Hangul Shop</li>
                 </Link>
                 <Link style={{textDecoration: "none"}} to="/cart">
                     <li>

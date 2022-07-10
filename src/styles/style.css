@@ -5,6 +5,7 @@
     --brown: #b49d9d;
     --pink: #e8dada;
     --background: #fbf7f5;
+    --button-hover: #348484;
 }
 
 body {
@@ -62,6 +63,10 @@ nav ul {
     border-bottom: 1px solid white;
 }
 
+.logo {
+    max-width: 35px;
+}
+
 #logo {
     display: flex;
     align-items: center;
@@ -88,15 +93,18 @@ nav img {
     width: 40px;
 }
 
+.hangul-link {
+    color: rgb(255, 225, 0);
+}
+
 /* Home */
 
 .home-container {
-    /* background-image: url(./images/fruit-background.jpg);
-    background-size: cover; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
+    background: url(./images/hero.png);
+    background-size: cover;
+    /* background-position: bottom; */
 }
 
 @keyframes fadein {
@@ -112,42 +120,46 @@ nav img {
 .home-text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5rem;
+    margin-left: 30%;
+    margin-bottom: 10%;
+    gap: .75rem;
 }
 
-.home-container h1 {
-    margin: 0 5rem 0 0;
-    color: var(--dark-blue);
-    font-family: 'Patua One', cursive;
+.home-text h1 {
+    color: var(--pink);
+    text-shadow: -2px 2px black;
+    font-family: 'DM Serif Display', serif;
     font-size: 4rem;
-    animation: linear 1s fadein;
+    margin: 0;
+    /* animation: linear 1s fadein; */
 }
 
-.home-container h2 {
-    margin-left: 15rem;
+.home-text p {
     color: white;
-    font-size: 3rem;
-    color: var(--yellow);
-    text-shadow: 2px 2px black;
-    animation: linear 2s fadein;
+    font-size: 1.25rem;
+    text-shadow: -2px 2px black;
+    margin: 0;
+    /* animation: linear 2s fadein; */
 }
 
-.home-container h2:hover {
-    cursor: pointer;
-    transform: scale(1.1);
+.home-link {
+  
 }
 
 .home-button {
     border: none;
-    border-radius: 8px;
-    background-color: var(--yellow);
-    font-size: 1.5rem;
-    padding: 10px;
+    background-color: var(--blue);
+    font-size: 1rem;
+    padding: 15px 25px;
+    box-shadow: -2px 2px 5px grey;
     color: white;
     font-family: 'Inter', sans-serif;
-    letter-spacing: 1px;
+    margin-top: 1rem;
+}
+
+.home-button:hover {
+    cursor: pointer;
+    background-color: var(--button-hover);
 }
 
 /* Shop */
@@ -191,7 +203,7 @@ header {
 }
 
 .add-button:hover {
-    background-color: #3b9292;
+    background-color: var(--button-hover);
     cursor: pointer;
 }
 
@@ -321,7 +333,7 @@ hr {
 
 .checkout-button:hover {
     cursor: pointer;
-    background-color: #3b9292;
+    background-color: var(--button-hover);
 }
 
 .checkout-button:active {
@@ -348,6 +360,7 @@ hr {
     background-color: #f9f1f1;
     box-shadow: -2px 2px 5px grey;
     padding: 1rem 2rem;
+    margin-top: .5rem;
 }
 
 .cart-product-container figure {

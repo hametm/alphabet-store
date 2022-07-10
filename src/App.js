@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
-import Shop from "./components/Shop";
+import LatinShop from "./components/LatinShop";
+import HangulShop from "./components/HangulShop";
 import Cart from "./components/Cart";
 import { v4 as uuid } from 'uuid';
 
@@ -54,8 +55,12 @@ function App() {
             <Routes>
                 <Route exact path = "/" element={<Home amount={cartAmount} />} />
                 <Route 
-                  path = "/shop" 
-                  element={<Shop addToCart={addToCart} amount={cartAmount} />} 
+                  path = "/latin-shop" 
+                  element={<LatinShop addToCart={addToCart} amount={cartAmount} />} 
+                />
+                <Route 
+                  path = "/hangul-shop" 
+                  element={<HangulShop addToCart={addToCart} amount={cartAmount} />} 
                 />
                 <Route 
                   path = "/cart" 
