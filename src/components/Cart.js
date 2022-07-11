@@ -43,11 +43,13 @@ function Cart(props) {
         return (
             <CartProduct
                 name={product.name}
+                list={props.list}
                 key={product.id}
                 price={product.price}
                 product={product}
                 increaseQuantity={props.increaseQuantity}
                 decreaseQuantity={props.decreaseQuantity}
+                removeItem={props.removeItem} 
             />
         );
     });

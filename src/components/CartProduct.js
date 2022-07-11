@@ -1,4 +1,18 @@
+import { useEffect } from "react";
+
 function CartProduct(props) {
+
+    useEffect(() => {
+        for (let i = 0; i < props.list.length; i++) {
+            if (props.list[i].amount === 0) {
+                const container = document.getElementById(props.list[i].name);
+                if (container) {
+                    container.remove();
+                }
+            }
+        }
+    });
+
     return (
         <div id={props.name}>
             <hr className="cart-line" />
@@ -8,6 +22,11 @@ function CartProduct(props) {
                     <figcaption>
                         <h4>The Letter "{props.name}"</h4>
                         <p>${(props.price).toFixed(2)}</p>
+                        <button 
+                            className="remove-button" 
+                            onClick={() => props.removeItem(props.product)}>
+                            Remove
+                        </button>
                     </figcaption>
                 </figure>
                 <div className="quantity">

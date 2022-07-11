@@ -51,6 +51,15 @@ function App() {
         setCartAmount(x => x - 1);
       }
 
+      const removeItem = (product) => {
+        let index = cartList.indexOf(product);
+        setCartList(cartList.filter(x => x !== cartList[index]));
+        setCartAmount(x => x - product.amount);
+        // cartList[index].amount -= product.amount;
+        // setTotalPrice(x => x - cartList[index].price);
+        // 
+      }
+
       return (
         <HashRouter basename="/">
             <Routes>
@@ -78,7 +87,8 @@ function App() {
                               amount={cartAmount} 
                               addToCart={addToCart}
                               increaseQuantity={increaseQuantity}
-                              decreaseQuantity={decreaseQuantity} 
+                              decreaseQuantity={decreaseQuantity}
+                              removeItem={removeItem} 
                               price={totalPrice} 
                             />} 
                 />

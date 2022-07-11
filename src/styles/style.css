@@ -422,6 +422,21 @@ hr {
     font-weight: normal;
 }
 
+.remove-button {
+    border: none;
+    background-color: transparent;
+    font-family: 'Inter', sans-serif;
+    color: var(--blue);
+    text-align: left;
+    font-size: 1rem;
+    padding: 0;
+}
+
+.remove-button:hover {
+    color: var(--button-hover);
+    cursor: pointer;
+}
+
 /* Account */
 
 .account-container {
