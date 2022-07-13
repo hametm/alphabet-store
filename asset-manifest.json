@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/alphabet-store/static/css/main.31d6cfe0.css",
+    "main.css": "/alphabet-store/static/css/main.5f843e7a.css",
     "main.js": "/alphabet-store/static/js/main.99c95f5b.js",
     "static/media/iceland.jpg": "/alphabet-store/static/media/iceland.c578adfdd432bf3dbcf0.jpg",
     "index.html": "/alphabet-store/index.html",
+    "main.5f843e7a.css.map": "/alphabet-store/static/css/main.5f843e7a.css.map",
     "main.99c95f5b.js.map": "/alphabet-store/static/js/main.99c95f5b.js.map"
   },
   "entrypoints": [
-    "static/css/main.31d6cfe0.css",
+    "static/css/main.5f843e7a.css",
     "static/js/main.99c95f5b.js"
   ]
 }
