@@ -1,15 +1,13 @@
 {
   "files": {
-    "main.css": "/alphabet-store/static/css/main.77e9d74f.css",
-    "main.js": "/alphabet-store/static/js/main.5ee946e8.js",
-    "static/media/hero.png": "/alphabet-store/static/media/hero.37cf71a44def1684460e.png",
-    "static/media/hero-small.png": "/alphabet-store/static/media/hero-small.12f33b97d0d06869f69f.png",
+    "main.css": "/alphabet-store/static/css/main.31d6cfe0.css",
+    "main.js": "/alphabet-store/static/js/main.99c95f5b.js",
+    "static/media/iceland.jpg": "/alphabet-store/static/media/iceland.c578adfdd432bf3dbcf0.jpg",
     "index.html": "/alphabet-store/index.html",
-    "main.77e9d74f.css.map": "/alphabet-store/static/css/main.77e9d74f.css.map",
-    "main.5ee946e8.js.map": "/alphabet-store/static/js/main.5ee946e8.js.map"
+    "main.99c95f5b.js.map": "/alphabet-store/static/js/main.99c95f5b.js.map"
   },
   "entrypoints": [
-    "static/css/main.77e9d74f.css",
-    "static/js/main.5ee946e8.js"
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.99c95f5b.js"
   ]
 }
