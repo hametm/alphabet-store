@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Nav from "./Nav";
 import ShopProduct from "./ShopProduct";
 import { v4 as uuid } from 'uuid';
 
 
 function LatinShop(props) {
+
+    useEffect(() => {
+        const links = document.querySelectorAll(".link");
+        const link = document.querySelector(".latin-link");
+        links.forEach(link => link.classList.remove("selected"));
+        link.classList.add("selected");
+    }, [])
 
     const productList = [
         {name: "A", id: uuid(), price: 2},

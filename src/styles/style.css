@@ -96,8 +96,12 @@ nav h4 {
     cursor: pointer;
 }
 
-.hangul-link {
+.new-text {
     color: rgb(245, 202, 12);
+}
+
+.selected {
+    border-bottom: 1px solid var(--text);
 }
 
 .cart-icon {

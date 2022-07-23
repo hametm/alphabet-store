@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import cart from "../styles/images/cart.png";
 
 const Nav = (props) => {
+
     return (
         <nav>
             <Link style={{textDecoration: "none"}} to="/">
@@ -13,21 +14,21 @@ const Nav = (props) => {
             <ul>
                 <div className="nav-left">
                     <Link style={{textDecoration: "none"}} to="/">
-                        <li className="link">Home</li>
+                        <li className="link home-link">Home</li>
                     </Link>
                     <Link style={{textDecoration: "none"}} to="/latin-shop">
-                        <li className="link">Latin Shop</li>
+                        <li className="link latin-link">Latin Shop</li>
                     </Link>
                     <Link style={{textDecoration: "none"}} to="/icelandic-shop">
-                        <li className="link">Icelandic Shop</li>
+                        <li className="link icelandic-link">Icelandic Shop</li>
                     </Link>
                     <Link style={{textDecoration: "none"}} to="/hangul-shop">
-                        <li className="link"><span className="hangul-link"><strong>New: </strong></span>Hangul Shop</li>
+                        <li className="link hangul-link"><span className="new-text"><strong>New: </strong></span>Hangul Shop</li>
                     </Link>
                 </div>
                 <div className="nav-right">
                     <Link style={{textDecoration: "none"}} to="/account">
-                        <li className="link">Account</li>
+                        <li className="link account-link">Account</li>
                     </Link>
                     <Link style={{textDecoration: "none"}} to="/cart">
                         <li className="cart-icon">

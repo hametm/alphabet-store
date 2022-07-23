@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Nav from "./Nav";
 
 function Account(props) {
 
     const requiredField = document.getElementById("first-name");
+
+    useEffect(() => {
+        const links = document.querySelectorAll(".link");
+        const link = document.querySelector(".account-link");
+        links.forEach(link => link.classList.remove("selected"));
+        link.classList.add("selected");
+    }, [])
 
     const checkValidity = () => {
         if (!(requiredField.checkValidity())) {

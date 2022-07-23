@@ -1,9 +1,17 @@
+import React, { useEffect } from "react";
 import Nav from "./Nav";
 import "../styles/style.css";
 import { Link } from "react-router-dom";
-import iceland from "../styles/images/iceland.jpg";
 
 function Home(props) {
+
+  useEffect(() => {
+      const links = document.querySelectorAll(".link");
+      const link = document.querySelector(".home-link");
+      links.forEach(link => link.classList.remove("selected"));
+      link.classList.add("selected");
+    }, []);
+
   return (
     <div className="container">
       <Nav amount={props.amount}/>
