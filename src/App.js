@@ -43,7 +43,7 @@ function App() {
 
       const decreaseQuantity = (product) => {
         let index = cartList.indexOf(product);
-        if (cartList[index].amount === 0) {
+        if (cartList[index].amount === 1) {
           return 0;
         }
         cartList[index].amount--;

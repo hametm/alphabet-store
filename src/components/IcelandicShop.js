@@ -43,13 +43,12 @@ function IcelandicShop(props) {
 
     const showProducts = productList.map(product => {
         return (
-            <div className="product-container">
+            <div key={uuid()} className="product-container">
                 <ShopProduct 
-                            name={product.name}
-                            key={product.id}
-                            price={product.price}
-                            addToCart={props.addToCart}
-                            product={product}
+                    name={product.name}
+                    price={product.price}
+                    addToCart={props.addToCart}
+                    product={product}
                 />
             </div>
         );            

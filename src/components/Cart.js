@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Nav from "./Nav";
 import CartProduct from "./CartProduct";
+import { v4 as uuid } from 'uuid';
 
 function Cart(props) {
 
@@ -13,7 +14,7 @@ function Cart(props) {
         if (props.amount === 0) {
             setSuperDiscount(0);
         }
-    });
+    }, [props.amount]);
 
     useEffect(() => {
         for (let i = 0; i < props.list.length; i++) {
@@ -43,8 +44,8 @@ function Cart(props) {
         return (
             <CartProduct
                 name={product.name}
+                key={uuid()}
                 list={props.list}
-                key={product.id}
                 price={product.price}
                 product={product}
                 increaseQuantity={props.increaseQuantity}
