@@ -6,9 +6,7 @@ function CartProduct(props) {
         for (let i = 0; i < props.list.length; i++) {
             if (props.list[i].amount === 0) {
                 const container = document.getElementById(props.list[i].name);
-                if (container) {
-                    container.remove();
-                }
+                if (container) container.remove();
             }
         }
     });

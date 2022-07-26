@@ -16,6 +16,11 @@ body {
     color: var(--text);
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+}
+
 #root {
     min-height: 100vh;
 }
@@ -56,7 +61,7 @@ main {
     align-items: flex-start;
 }
 
-nav ul {
+.links {
     display: flex;
     justify-content: space-between;
     margin: .25rem 0 0 0;
@@ -68,6 +73,7 @@ nav ul {
     display: flex;
     gap: 2.5rem;
     justify-content: flex-start;
+    margin-left: .25rem;
 }
 
 .nav-right {
@@ -499,7 +505,7 @@ input {
 
 @media (max-width: 480px) {
     
-    nav ul {
+    .links {
         margin: 0;
         padding: 0;
         justify-content: space-evenly;

@@ -3,7 +3,6 @@ import Nav from "./Nav";
 import ShopProduct from "./ShopProduct";
 import { v4 as uuid } from 'uuid';
 
-
 function IcelandicShop(props) {
 
     useEffect(() => {

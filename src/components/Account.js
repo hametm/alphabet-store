@@ -13,15 +13,11 @@ function Account(props) {
     }, [])
 
     const checkValidity = () => {
-        if (!(requiredField.checkValidity())) {
-            requiredField.classList.add("invalid");
-        } 
+        if (!(requiredField.checkValidity())) requiredField.classList.add("invalid");
     }
 
     const removeErrorMessage = () => {
-        if (requiredField.classList.contains("invalid")) {
-            requiredField.classList.remove("invalid");
-        }
+        if (requiredField.classList.contains("invalid")) requiredField.classList.remove("invalid");
     }
     
     return (

@@ -3,7 +3,6 @@ import Nav from "./Nav";
 import ShopProduct from "./ShopProduct";
 import { v4 as uuid } from 'uuid';
 
-
 function LatinShop(props) {
 
     useEffect(() => {
@@ -40,8 +39,7 @@ function LatinShop(props) {
         {name: "X", id: uuid(), price: 5},
         {name: "Y", id: uuid(), price: 3},
         {name: "Z", id: uuid(), price: 50},
-
-      ];
+    ];
 
     const showProducts = productList.map(product => {
         return (

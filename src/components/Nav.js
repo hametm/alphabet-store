@@ -11,8 +11,8 @@ const Nav = (props) => {
                     <h4>The Alphabet Store</h4>
                 </div>
             </Link>
-            <ul>
-                <div className="nav-left">
+            <div className="links">
+                <ul className="nav-left">
                     <Link style={{textDecoration: "none"}} to="/">
                         <li className="link home-link">Home</li>
                     </Link>
@@ -25,8 +25,8 @@ const Nav = (props) => {
                     <Link style={{textDecoration: "none"}} to="/hangul-shop">
                         <li className="link hangul-link"><span className="new-text"><strong>New: </strong></span>Hangul Shop</li>
                     </Link>
-                </div>
-                <div className="nav-right">
+                </ul>
+                <ul className="nav-right">
                     <Link style={{textDecoration: "none"}} to="/account">
                         <li className="link account-link">Account</li>
                     </Link>
@@ -38,8 +38,8 @@ const Nav = (props) => {
                             </div>
                         </li>
                     </Link>
-                </div>
-            </ul>
+                </ul>
+            </div>
         </nav>
     );
 }
