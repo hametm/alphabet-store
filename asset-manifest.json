@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/alphabet-store/static/css/main.b643c0bd.css",
+    "main.css": "/alphabet-store/static/css/main.07665989.css",
     "main.js": "/alphabet-store/static/js/main.ffb5105f.js",
     "index.html": "/alphabet-store/index.html",
-    "main.b643c0bd.css.map": "/alphabet-store/static/css/main.b643c0bd.css.map",
+    "main.07665989.css.map": "/alphabet-store/static/css/main.07665989.css.map",
     "main.ffb5105f.js.map": "/alphabet-store/static/js/main.ffb5105f.js.map"
   },
   "entrypoints": [
-    "static/css/main.b643c0bd.css",
+    "static/css/main.07665989.css",
     "static/js/main.ffb5105f.js"
   ]
 }
