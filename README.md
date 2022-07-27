@@ -2,7 +2,7 @@ View live: https://hametm.github.io/alphabet-store/
 
 Reimagining of a former project, which you can find here: https://github.com/hametm/shopping-cart 
 
-On this fake but excitin website, you can shop around for different letters of the alphabet. It's made using React and routers.
+On this website, you can shop around for letters of the alphabet. It's made using React and it uses routers to link to different pages.
 
 Cart icon by materialdesignicons.com.
 <a href="https://www.flaticon.com/free-icons/letter-a" title="letter a icons">Logo created by Roundicons Premium - Flaticon</a>.
